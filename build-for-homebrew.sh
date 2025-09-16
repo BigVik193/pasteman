@@ -19,7 +19,7 @@ mkdir -p "${BUILD_DIR}" "${RELEASE_DIR}"
 # Build the Swift package (universal binary for Intel + Apple Silicon)
 echo "📦 Building Swift package..."
 cd PastePal
-swift build -c release --arch arm64 --arch x86_64
+swift build -c release
 
 # Create the app bundle
 echo "🏗️  Creating app bundle..."

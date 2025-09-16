@@ -9,7 +9,8 @@
       "Bash(swift build)",
       "Read(//Users/Vikram/Desktop/pastepal-landing/**)",
       "WebFetch(domain:stackoverflow.com)",
-      "WebFetch(domain:medium.com)"
+      "WebFetch(domain:medium.com)",
+      "Bash(./build-for-homebrew.sh:*)"
     ],
     "deny": [],
     "ask": []

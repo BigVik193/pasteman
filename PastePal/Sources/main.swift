@@ -171,7 +171,6 @@ class Settings {
     }
 }
 
-@main
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem!
     var clipboardManager: ClipboardManager!
@@ -604,4 +603,7 @@ class EventMonitor {
         }
     }
 }
+
+// Entry point
+AppDelegate.main()
 
