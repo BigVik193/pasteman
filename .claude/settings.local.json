@@ -10,7 +10,8 @@
       "Read(//Users/Vikram/Desktop/pastepal-landing/**)",
       "WebFetch(domain:stackoverflow.com)",
       "WebFetch(domain:medium.com)",
-      "Bash(./build-for-homebrew.sh:*)"
+      "Bash(./build-for-homebrew.sh:*)",
+      "Read(//Users/Vikram/Desktop/homebrew-tap/**)"
     ],
     "deny": [],
     "ask": []

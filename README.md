@@ -24,8 +24,20 @@ By default, 5 slots have pre-configured shortcuts:
 
 The remaining slots (3, 4, 5, 6, 10) can be configured with custom shortcuts through the Settings menu.
 
-## Installation & Setup
+## Installation
 
+### Homebrew (Recommended)
+```bash
+brew tap BigVik193/tap
+brew install --cask pastepal
+```
+
+### Manual Installation
+1. Download from [GitHub Releases](https://github.com/BigVik193/pastepal/releases)
+2. Extract and move `PastePal.app` to Applications
+3. Launch and grant accessibility permissions
+
+### Development Setup
 1. Navigate to the PastePal directory:
    ```bash
    cd PastePal
