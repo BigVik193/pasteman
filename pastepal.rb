@@ -1,6 +1,6 @@
 cask "pastepal" do
   version "1.0.2"
-  sha256 "7edbc0eda6a26db6c87793a656ad73e25acdba66e8204c97990283340db52765"
+  sha256 "1f7ca66973d4f0bef582e391d047579fb50ed728cc944a21521b05b03324fe0d"
 
   url "https://github.com/BigVik193/pastepal/releases/download/v#{version}/PastePal-#{version}.zip"
   name "PastePal"
@@ -26,7 +26,7 @@ cask "pastepal" do
 
       ⚙️  Configure custom shortcuts via menu bar → Settings
       📝 Available keys: E,J,U,X,Y / 0,1,2,7,8,9 / `,],[
-      ❓ Get help via menu bar → Settings → "How to Use PastePal"
+      ❓ Get help via menu bar → "How to Use PastePal"
 
       For support: https://github.com/BigVik193/pastepal/issues
     EOS

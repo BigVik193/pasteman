@@ -218,6 +218,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: "Clear All", action: #selector(clearAll), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "How to Use PastePal", action: #selector(showInfo), keyEquivalent: ""))
         
         // Add Settings submenu
         let settingsMenuItem = NSMenuItem(title: "Settings", action: nil, keyEquivalent: "")
@@ -251,9 +252,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         settingsSubmenu.addItem(NSMenuItem.separator())
-        let infoMenuItem = NSMenuItem(title: "How to Use PastePal", action: #selector(showInfo), keyEquivalent: "")
-        settingsSubmenu.addItem(infoMenuItem)
-        
         let resetMenuItem = NSMenuItem(title: "Reset All to Defaults", action: #selector(resetAllKeybinds), keyEquivalent: "")
         settingsSubmenu.addItem(resetMenuItem)
         
