@@ -6,7 +6,7 @@
 set -e
 
 APP_NAME="PastePal"
-VERSION="1.0.0"
+VERSION="1.0.1"
 BUILD_DIR="$(pwd)/build"
 RELEASE_DIR="$(pwd)/release"
 
@@ -29,6 +29,10 @@ mkdir -p "${BUILD_DIR}/${APP_NAME}.app/Contents/Resources"
 
 # Copy the executable
 cp "PastePal/.build/release/${APP_NAME}" "${BUILD_DIR}/${APP_NAME}.app/Contents/MacOS/${APP_NAME}"
+
+# Clear extended attributes that cause "damaged" errors
+echo "🧹 Clearing extended attributes..."
+xattr -cr "${BUILD_DIR}/${APP_NAME}.app"
 
 # Create Info.plist
 cat > "${BUILD_DIR}/${APP_NAME}.app/Contents/Info.plist" << EOF

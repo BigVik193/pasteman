@@ -37,6 +37,11 @@ brew install --cask pastepal
 2. Extract and move `PastePal.app` to Applications
 3. Launch and grant accessibility permissions
 
+**Note:** If you see "PastePal is damaged", run:
+```bash
+sudo xattr -rd com.apple.quarantine /Applications/PastePal.app
+```
+
 ### Development Setup
 1. Navigate to the PastePal directory:
    ```bash

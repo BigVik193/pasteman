@@ -1,6 +1,6 @@
 cask "pastepal" do
-  version "1.0.0"
-  sha256 "1087ded0692dc17ae13f8f6b7759692ec4190fc092cf2a13fbfc822a9dbc2cd5"
+  version "1.0.1"
+  sha256 "46f11270f847d8a14f39259651f5d2b4ab07980da49a6653f25807812ba8523f"
 
   url "https://github.com/BigVik193/pastepal/releases/download/v#{version}/PastePal-#{version}.zip"
   name "PastePal"
