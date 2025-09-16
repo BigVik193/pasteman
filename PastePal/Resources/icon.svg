@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#2563eb" rx="80"/>
+  
+  <!-- Clipboard background -->
+  <rect x="128" y="96" width="256" height="320" fill="#ffffff" rx="16"/>
+  
+  <!-- Clipboard clip -->
+  <rect x="192" y="64" width="128" height="48" fill="#6b7280" rx="8"/>
+  <rect x="208" y="72" width="96" height="32" fill="#ffffff" rx="4"/>
+  
+  <!-- Multiple clipboard slots representation -->
+  <g fill="#2563eb">
+    <!-- Blue slots shifted 8px right -->
+    <rect x="168" y="160" width="192" height="16" rx="2"/>
+    <rect x="168" y="200" width="192" height="16" rx="2"/>
+    <rect x="168" y="240" width="192" height="16" rx="2"/>
+    <rect x="168" y="280" width="192" height="16" rx="2"/>
+    <rect x="168" y="320" width="192" height="16" rx="2"/>
+  </g>
+  
+  <!-- Number indicators for slots -->
+  <g fill="#94a3b8" font-family="SF Pro Display, system-ui, sans-serif" font-size="24" font-weight="600">
+    <!-- Numbers shifted 4px right -->
+    <text x="148" y="175" text-anchor="middle">1</text>
+    <text x="148" y="215" text-anchor="middle">2</text>
+    <text x="148" y="255" text-anchor="middle">3</text>
+    <text x="148" y="295" text-anchor="middle">4</text>
+    <text x="148" y="335" text-anchor="middle">5</text>
+  </g>
+</svg>
