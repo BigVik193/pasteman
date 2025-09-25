@@ -410,8 +410,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func requestAccessibilityPermissions() {
-        let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true]
-        let accessEnabled = AXIsProcessTrustedWithOptions(options)
+        // Check accessibility status without showing system prompt
+        let accessEnabled = AXIsProcessTrusted()
         
         if !accessEnabled {
             let alert = NSAlert()

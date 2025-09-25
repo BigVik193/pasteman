@@ -43,7 +43,7 @@ cat > "${BUILD_DIR}/${APP_NAME}.app/Contents/Info.plist" << EOF
     <key>CFBundleExecutable</key>
     <string>${APP_NAME}</string>
     <key>CFBundleIdentifier</key>
-    <string>com.pastepal.app</string>
+    <string>com.pasteman.app</string>
     <key>CFBundleName</key>
     <string>${APP_NAME}</string>
     <key>CFBundleDisplayName</key>
@@ -99,7 +99,7 @@ echo ""
 echo "🚀 Next steps for Homebrew distribution:"
 echo "1. Upload ${APP_NAME}-${VERSION}.zip to GitHub Releases"
 echo "2. Get the download URL and SHA256 hash"
-echo "3. Update pastepal.rb with the real URL and hash"
+echo "3. Update pasteman.rb with the real URL and hash"
 echo "4. Submit to homebrew-cask or create your own tap"
 echo ""
 echo "💡 To calculate SHA256 hash:"

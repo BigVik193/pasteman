@@ -32,10 +32,10 @@ This creates:
 
 ### 3. Update Cask Formula
 
-Edit `pastepal.rb`:
+Edit `pasteman.rb`:
 
 ```ruby
-url "https://github.com/BigVik193/pastepal/releases/download/v1.0.0/Pasteman-1.0.0.zip"
+url "https://github.com/BigVik193/pasteman/releases/download/v1.0.0/Pasteman-1.0.0.zip"
 sha256 "abc123..."  # Calculate with: shasum -a 256 Pasteman-1.0.0.zip
 ```
 
@@ -43,10 +43,10 @@ sha256 "abc123..."  # Calculate with: shasum -a 256 Pasteman-1.0.0.zip
 
 ```bash
 # Test your cask locally
-brew install --cask ./pastepal.rb
+brew install --cask ./pasteman.rb
 
 # Test uninstall
-brew uninstall --cask pastepal
+brew uninstall --cask pasteman
 ```
 
 ## 📦 Distribution Options
@@ -56,9 +56,9 @@ brew uninstall --cask pastepal
 Submit to [homebrew-cask](https://github.com/Homebrew/homebrew-cask):
 
 1. Fork the homebrew-cask repository
-2. Add your `pastepal.rb` to `Casks/p/pastepal.rb`
+2. Add your `pasteman.rb` to `Casks/p/pasteman.rb`
 3. Submit a pull request
-4. Users install with: `brew install --cask pastepal`
+4. Users install with: `brew install --cask pasteman`
 
 **Pros**: Maximum visibility, official distribution  
 **Cons**: Review process, naming requirements
@@ -68,9 +68,9 @@ Submit to [homebrew-cask](https://github.com/Homebrew/homebrew-cask):
 Create your own Homebrew tap:
 
 1. Create repository: `homebrew-tap`
-2. Add `pastepal.rb` to root
+2. Add `pasteman.rb` to root
 3. Users add tap: `brew tap BigVik193/tap`
-4. Users install: `brew install --cask BigVik193/tap/pastepal`
+4. Users install: `brew install --cask BigVik193/tap/pasteman`
 
 **Pros**: Full control, faster updates  
 **Cons**: Less discovery, users must know your tap
@@ -79,8 +79,8 @@ Create your own Homebrew tap:
 
 Distribute the `.rb` file directly:
 
-1. Users download `pastepal.rb`
-2. Users run: `brew install --cask ./pastepal.rb`
+1. Users download `pasteman.rb`
+2. Users run: `brew install --cask ./pasteman.rb`
 
 **Pros**: Immediate distribution  
 **Cons**: Not searchable, manual updates
@@ -89,14 +89,14 @@ Distribute the `.rb` file directly:
 
 1. **Build new version**: Update version in `build-for-homebrew.sh`
 2. **Create GitHub release**: Upload new ZIP
-3. **Update cask**: Change version and SHA256 in `pastepal.rb`
+3. **Update cask**: Change version and SHA256 in `pasteman.rb`
 4. **Submit update**: PR to homebrew-cask or push to your tap
 
 ## 🧪 Testing
 
 ```bash
 # Install from local file
-brew install --cask ./pastepal.rb
+brew install --cask ./pasteman.rb
 
 # Check installation
 ls /Applications/Pasteman.app
@@ -105,10 +105,10 @@ ls /Applications/Pasteman.app
 /Applications/Pasteman.app/Contents/MacOS/Pasteman --version
 
 # Uninstall
-brew uninstall --cask pastepal
+brew uninstall --cask pasteman
 
 # Cleanup (removes preferences)
-brew uninstall --zap --cask pastepal
+brew uninstall --zap --cask pasteman
 ```
 
 ## 🔧 Cask Features Used
@@ -133,13 +133,13 @@ Once set up, users get this simple experience:
 
 ```bash
 # One command to install
-brew install --cask pastepal
+brew install --cask pasteman
 
 # One command to update
-brew upgrade pastepal
+brew upgrade pasteman
 
 # One command to uninstall
-brew uninstall --cask pastepal
+brew uninstall --cask pasteman
 ```
 
 No scary security warnings, no complex setup - just works! 🎉

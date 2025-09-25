@@ -29,11 +29,11 @@ The remaining slots (3, 4, 5, 6, 10) can be configured with custom shortcuts thr
 ### Homebrew (Recommended)
 ```bash
 brew tap BigVik193/tap
-brew install --cask pastepal
+brew install --cask pasteman
 ```
 
 ### Manual Installation
-1. Download from [GitHub Releases](https://github.com/BigVik193/pastepal/releases)
+1. Download from [GitHub Releases](https://github.com/BigVik193/pasteman/releases)
 2. Extract and move `Pasteman.app` to Applications
 3. Launch and grant accessibility permissions
 

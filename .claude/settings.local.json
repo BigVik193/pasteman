@@ -7,13 +7,15 @@
       "mcp__context7__resolve-library-id",
       "mcp__context7__get-library-docs",
       "Bash(swift build)",
-      "Read(//Users/Vikram/Desktop/pastepal-landing/**)",
+      "Read(//Users/Vikram/Desktop/pasteman-landing/**)",
       "WebFetch(domain:stackoverflow.com)",
       "WebFetch(domain:medium.com)",
       "Bash(./build-for-homebrew.sh:*)",
       "Read(//Users/Vikram/Desktop/homebrew-tap/**)",
       "Bash(mv:*)",
-      "Bash(swift package:*)"
+      "Bash(swift package:*)",
+      "Bash(sips:*)",
+      "Bash(xcodebuild -project pasteman-app.xcodeproj -scheme pasteman-app -configuration Debug build)"
     ],
     "deny": [],
     "ask": []
