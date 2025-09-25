@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Building PastePal..."
+echo "Building Pasteman..."
 swift build -c release
 
-echo "Running PastePal..."
+echo "Running Pasteman..."
 echo "Note: You'll need to grant Accessibility permissions when prompted."
 echo ""
 echo "Keyboard Shortcuts:"
@@ -12,4 +12,4 @@ echo "  Cmd+Shift+Option+1-9: Clear the specified slot"
 echo ""
 echo "The app will run in your menu bar. Look for the clipboard icon."
 
-./.build/release/PastePal
+./.build/release/Pasteman

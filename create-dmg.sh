@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# DMG Creation Script for PastePal
+# DMG Creation Script for Pasteman
 # Creates a DMG with drag-to-Applications functionality
 
 set -e
 
-APP_NAME="PastePal"
+APP_NAME="Pasteman"
 VERSION="1.0.2"
 DMG_NAME="${APP_NAME}-${VERSION}"
 APP_PATH="build/${APP_NAME}.app"

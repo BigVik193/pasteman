@@ -1,6 +1,6 @@
 # Homebrew Distribution Guide
 
-This guide shows how to distribute PastePal via Homebrew - much simpler than Apple's code signing!
+This guide shows how to distribute Pasteman via Homebrew - much simpler than Apple's code signing!
 
 ## 🍺 Why Homebrew?
 
@@ -20,8 +20,8 @@ This guide shows how to distribute PastePal via Homebrew - much simpler than App
 ```
 
 This creates:
-- `build/PastePal.app` - The app bundle
-- `release/PastePal-1.0.0.zip` - Release archive
+- `build/Pasteman.app` - The app bundle
+- `release/Pasteman-1.0.0.zip` - Release archive
 
 ### 2. Create GitHub Release
 
@@ -35,8 +35,8 @@ This creates:
 Edit `pastepal.rb`:
 
 ```ruby
-url "https://github.com/BigVik193/pastepal/releases/download/v1.0.0/PastePal-1.0.0.zip"
-sha256 "abc123..."  # Calculate with: shasum -a 256 PastePal-1.0.0.zip
+url "https://github.com/BigVik193/pastepal/releases/download/v1.0.0/Pasteman-1.0.0.zip"
+sha256 "abc123..."  # Calculate with: shasum -a 256 Pasteman-1.0.0.zip
 ```
 
 ### 4. Test Installation
@@ -99,10 +99,10 @@ Distribute the `.rb` file directly:
 brew install --cask ./pastepal.rb
 
 # Check installation
-ls /Applications/PastePal.app
+ls /Applications/Pasteman.app
 
 # Verify app info
-/Applications/PastePal.app/Contents/MacOS/PastePal --version
+/Applications/Pasteman.app/Contents/MacOS/Pasteman --version
 
 # Uninstall
 brew uninstall --cask pastepal

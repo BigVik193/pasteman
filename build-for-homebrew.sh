@@ -5,7 +5,7 @@
 
 set -e
 
-APP_NAME="PastePal"
+APP_NAME="Pasteman"
 VERSION="1.0.2"
 BUILD_DIR="$(pwd)/build"
 RELEASE_DIR="$(pwd)/release"
@@ -18,7 +18,7 @@ mkdir -p "${BUILD_DIR}" "${RELEASE_DIR}"
 
 # Build the Swift package (universal binary for Intel + Apple Silicon)
 echo "📦 Building Swift package..."
-cd PastePal
+cd Pasteman
 swift build -c release
 
 # Create the app bundle
@@ -28,7 +28,7 @@ mkdir -p "${BUILD_DIR}/${APP_NAME}.app/Contents/MacOS"
 mkdir -p "${BUILD_DIR}/${APP_NAME}.app/Contents/Resources"
 
 # Copy the executable
-cp "PastePal/.build/release/${APP_NAME}" "${BUILD_DIR}/${APP_NAME}.app/Contents/MacOS/${APP_NAME}"
+cp "Pasteman/.build/release/${APP_NAME}" "${BUILD_DIR}/${APP_NAME}.app/Contents/MacOS/${APP_NAME}"
 
 # Clear extended attributes that cause "damaged" errors
 echo "🧹 Clearing extended attributes..."
@@ -69,17 +69,17 @@ cat > "${BUILD_DIR}/${APP_NAME}.app/Contents/Info.plist" << EOF
     <key>NSApplicationCategoryType</key>
     <string>public.app-category.productivity</string>
     <key>NSHumanReadableCopyright</key>
-    <string>Copyright © $(date +%Y) PastePal. All rights reserved.</string>
+    <string>Copyright © $(date +%Y) Pasteman. All rights reserved.</string>
     <key>NSPrivacyAccessibilityUsageDescription</key>
-    <string>PastePal needs accessibility access to monitor global keyboard shortcuts and simulate paste operations.</string>
+    <string>Pasteman needs accessibility access to monitor global keyboard shortcuts and simulate paste operations.</string>
 </dict>
 </plist>
 EOF
 
 # Add the custom app icon
 echo "🎨 Adding app icon..."
-if [ -f "PastePal/Resources/AppIcon.icns" ]; then
-    cp "PastePal/Resources/AppIcon.icns" "${BUILD_DIR}/${APP_NAME}.app/Contents/Resources/AppIcon.icns"
+if [ -f "Pasteman/Resources/AppIcon.icns" ]; then
+    cp "Pasteman/Resources/AppIcon.icns" "${BUILD_DIR}/${APP_NAME}.app/Contents/Resources/AppIcon.icns"
     echo "✅ Custom icon added"
 else
     echo "⚠️  Custom icon not found, app will use default icon"

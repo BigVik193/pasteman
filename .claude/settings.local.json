@@ -11,7 +11,9 @@
       "WebFetch(domain:stackoverflow.com)",
       "WebFetch(domain:medium.com)",
       "Bash(./build-for-homebrew.sh:*)",
-      "Read(//Users/Vikram/Desktop/homebrew-tap/**)"
+      "Read(//Users/Vikram/Desktop/homebrew-tap/**)",
+      "Bash(mv:*)",
+      "Bash(swift package:*)"
     ],
     "deny": [],
     "ask": []

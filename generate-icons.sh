@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Icon Generation Script for PastePal
+# Icon Generation Script for Pasteman
 # Generates macOS icon set from a 1024x1024 PNG
 
 set -e
 
-SOURCE_ICON="PastePal/Resources/icon.png"
-ICONSET_DIR="PastePal/Resources/AppIcon.iconset"
-OUTPUT_ICNS="PastePal/Resources/AppIcon.icns"
+SOURCE_ICON="Pasteman/Resources/icon.png"
+ICONSET_DIR="Pasteman/Resources/AppIcon.iconset"
+OUTPUT_ICNS="Pasteman/Resources/AppIcon.icns"
 
 echo "🎨 Generating macOS icon set from ${SOURCE_ICON}..."
 

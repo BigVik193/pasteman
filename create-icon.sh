@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Create app icon for PastePal
+# Create app icon for Pasteman
 # This script generates a simple icon using macOS built-in tools
 
-RESOURCES_DIR="PastePal/Resources"
+RESOURCES_DIR="Pasteman/Resources"
 ICON_NAME="AppIcon"
 
-echo "🎨 Creating PastePal app icon..."
+echo "🎨 Creating Pasteman app icon..."
 
 # Create icon directory structure
 mkdir -p "${RESOURCES_DIR}/${ICON_NAME}.iconset"

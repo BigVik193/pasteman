@@ -202,12 +202,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         
         if let button = statusItem.button {
-            button.image = NSImage(systemSymbolName: "doc.on.clipboard", accessibilityDescription: "PastePal")
+            button.image = NSImage(systemSymbolName: "doc.on.clipboard", accessibilityDescription: "Pasteman")
             button.image?.isTemplate = true
         }
         
         let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "PastePal", action: nil, keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "Pasteman", action: nil, keyEquivalent: ""))
         menu.addItem(NSMenuItem.separator())
         
         for i in 1...10 {
@@ -218,7 +218,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: "Clear All", action: #selector(clearAll), keyEquivalent: ""))
-        menu.addItem(NSMenuItem(title: "How to Use PastePal", action: #selector(showInfo), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "How to Use Pasteman", action: #selector(showInfo), keyEquivalent: ""))
         
         // Add Settings submenu
         let settingsMenuItem = NSMenuItem(title: "Settings", action: nil, keyEquivalent: "")
@@ -318,9 +318,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc func showInfo() {
         let alert = NSAlert()
-        alert.messageText = "How to Use PastePal"
+        alert.messageText = "How to Use Pasteman"
         alert.informativeText = """
-        PastePal helps you manage multiple clipboard slots with keyboard shortcuts.
+        Pasteman helps you manage multiple clipboard slots with keyboard shortcuts.
 
         📋 SAVING TO CLIPBOARD SLOTS:
         • Copy text as usual (⌘C)
@@ -416,7 +416,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if !accessEnabled {
             let alert = NSAlert()
             alert.messageText = "Accessibility Permission Required"
-            alert.informativeText = "PastePal needs accessibility permissions to monitor keyboard shortcuts globally. Please grant permission in System Preferences > Security & Privacy > Privacy > Accessibility."
+            alert.informativeText = "Pasteman needs accessibility permissions to monitor keyboard shortcuts globally. Please grant permission in System Preferences > Security & Privacy > Privacy > Accessibility."
             alert.alertStyle = .warning
             alert.addButton(withTitle: "OK")
             alert.runModal()

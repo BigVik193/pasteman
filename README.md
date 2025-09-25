@@ -1,4 +1,4 @@
-# PastePal - macOS Multiple Clipboard Manager
+# Pasteman - macOS Multiple Clipboard Manager
 
 A lightweight macOS menu bar application that provides 10 independent clipboard slots with fully configurable keyboard shortcuts, allowing you to store and paste multiple items using your preferred key combinations.
 
@@ -34,18 +34,18 @@ brew install --cask pastepal
 
 ### Manual Installation
 1. Download from [GitHub Releases](https://github.com/BigVik193/pastepal/releases)
-2. Extract and move `PastePal.app` to Applications
+2. Extract and move `Pasteman.app` to Applications
 3. Launch and grant accessibility permissions
 
-**Note:** If you see "PastePal is damaged", run:
+**Note:** If you see "Pasteman is damaged", run:
 ```bash
-sudo xattr -rd com.apple.quarantine /Applications/PastePal.app
+sudo xattr -rd com.apple.quarantine /Applications/Pasteman.app
 ```
 
 ### Development Setup
-1. Navigate to the PastePal directory:
+1. Navigate to the Pasteman directory:
    ```bash
-   cd PastePal
+   cd Pasteman
    ```
 
 2. Build and run the application:
@@ -56,7 +56,7 @@ sudo xattr -rd com.apple.quarantine /Applications/PastePal.app
    Or manually:
    ```bash
    swift build -c release
-   ./.build/release/PastePal
+   ./.build/release/Pasteman
    ```
 
 ## Permissions Required
@@ -86,7 +86,7 @@ The app requires two permissions to function:
 - Available keys: Letters (E, J, U, X, Y), Numbers (0, 1, 2, 7, 8, 9), Symbols (`, [, ])
 
 ### Getting Help
-- Click **"Settings"** → **"How to Use PastePal"** for a comprehensive in-app guide
+- Click **"Settings"** → **"How to Use Pasteman"** for a comprehensive in-app guide
 
 ## How It Works
 
@@ -108,7 +108,7 @@ The app runs in your menu bar (look for the clipboard icon) where you can:
 - View the contents of each clipboard slot (1-10)
 - See current keyboard shortcuts for each slot
 - Access Settings to configure custom shortcuts
-- Get help with "How to Use PastePal"
+- Get help with "How to Use Pasteman"
 - Clear all clipboards
 - Quit the application
 

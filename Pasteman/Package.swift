@@ -2,20 +2,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "PastePal",
+    name: "Pasteman",
     platforms: [
         .macOS(.v13)
     ],
     products: [
         .executable(
-            name: "PastePal",
-            targets: ["PastePal"]
+            name: "Pasteman",
+            targets: ["Pasteman"]
         )
     ],
     dependencies: [],
     targets: [
         .executableTarget(
-            name: "PastePal",
+            name: "Pasteman",
             dependencies: [],
             path: "Sources"
         )
