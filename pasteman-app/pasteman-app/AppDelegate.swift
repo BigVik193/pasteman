@@ -252,8 +252,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func openBuyMeACoffee() {
-        if let url = URL(string: "https://buymeacoffee.com/vikrambattalapalli") {
-            NSWorkspace.shared.open(url)
+        Task {
+            await InAppPurchaseManager.shared.buyCoffee()
         }
     }
     
